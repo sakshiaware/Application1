@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+
+     <!-- Include jQuery Mobile stylesheets -->
+
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<!-- Include the jQuery library -->
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script>
+    $(document).ready(function()
+    {
+        $('.bg').css('background-image','url(bts.jpg)');
+        $('.bg').css('background-color', 'black');
+        $('.bg').css('background-position','center');
+        $('.bg ').css('background-repeat','no-repeat');
+        $('.bg').css('height', '977px'); 
+    });
+    </script>
+</head>
+<body class="bg">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="page" data-role="page"></div>
+    <duv class="ui-grid-d">
+    </div>
+ <center>
+     <div class="ui-block-b"></div>
+        <h1>
+                 sakshi
+        </h1>
+</center>
+</body>
+</html>

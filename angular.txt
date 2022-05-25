@@ -1,0 +1,74 @@
+html file
+
+<div class="container">
+    <form  #signup="ngForm"  (ngSubmit)="submit(signup)" >
+       
+        
+            <input type="text" name="name"  placeholder="Your Name" #name="ngModel" required ngModel/>      
+            <div *ngIf = "name.invalid &&  name.touched" class="text-danger">
+                <div *ngIf = "name.errors && name.errors['required']" class="text-danger">Name is required</div>
+            </div>
+      
+      
+          
+            <input email type="email" name="email"  placeholder="Your Email" email #email="ngModel" required ngModel/>     
+            <div *ngIf = "email.invalid &&  email.touched" class="text-danger">
+                <div *ngIf = "email.errors && email.errors['required']" class="text-danger">Email is required</div>
+               
+            </div>
+ 
+       
+           
+            <input  type="password" name="your_pass"  placeholder="Password" #pwd="ngModel" required ngModel />
+            <div *ngIf = "pwd.invalid &&  pwd.touched" class="text-danger">
+                <div *ngIf = "pwd.errors && pwd.errors['required']" class="text-danger">Password is required</div>
+            </div>
+       
+        
+            <button type="submit"  class="btn">Log in</button>
+        
+    </form>     
+  </div>
+
+csscfile
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Add padding to containers */
+  .container {
+    padding: 16px;
+    background-color: white;
+  }
+  
+  /* Full-width input fields */
+  input {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+ts file
+export class App1Component  {
+
+  submit(login:any)
+  {
+    console.log(login.value)
+  }
+
+
+component ts
+
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
+imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
+
+  ],

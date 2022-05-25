@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="css/responsive.css" rel="stylesheet" />  
+<style>
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+.card {
+  box-shadow: 0 4px 8px 0 black;
+  width: 40%;
+}
+body
+{
+    background-color:crimson;
+}
+
+</style>
+</head>
+<body>
+    <marquee><h1>KKW</h1></marquee>
+    <div class="sidebar">
+        <a href="#home">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+      </div> 
+      <center>
+      <div class="card">
+        <img src="img_avatar.png" alt="Avatar" style="width:100%">
+        <div class="container">
+          <h4><b>John Doe</b></h4> 
+          <p>Architect & Engineer</p> 
+        </div>
+      </div>
+      <img src="kkw.jfif" width="300px" height="300px">
+      </center>
+      
+</body>
+</html>
